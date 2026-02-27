@@ -435,25 +435,30 @@
       .why-grid{grid-template-columns:1fr 1fr;}
       .ft-bar-in{flex-direction:column;align-items:flex-start;}
     }
-    .hero-content{
+.hero-content{
   display:flex;
   align-items:center;
   justify-content:space-between;
   gap:40px;
 }
 
-    .hero-text{
-      flex:1;
-    }
+.hero-text{
+  flex:1;
+}
 
-    .hero-image{
-      flex:1;
-      display:flex;
-      justify-content:flex-end;
-    }
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* supaya gambar rata bawah */
+  overflow: hidden;
+  max-height: calc(100vh - 66px); /* tinggi hero dikurangi navbar */
+}
 
-    .hero-image img{
-      max-width:1000px;
-      width: 1000rem;
-      height:auto;
-    }
+.hero-image img {
+  width: 100%;        /* ikuti lebar flex container */
+  max-width: 580px;   /* batas maksimal agar tidak terlalu besar */
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
