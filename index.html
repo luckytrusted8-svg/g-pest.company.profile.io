@@ -58,7 +58,7 @@
       <div class="hero-stats" data-r>
         <div class="hero-stat"><div class="num">500<sup>+</sup></div><div class="lbl">Pelanggan</div></div>
         <div class="hero-stat"><div class="num">5<sup>+</sup></div><div class="lbl">Teknisi</div></div>
-        <div class="hero-stat"><div class="num">5</div><div class="lbl">Metode</div></div>
+        <div class="hero-stat"><div class="num">4</div><div class="lbl">Layanan</div></div>
         <div class="hero-stat"><div class="num">100<sup>%</sup></div><div class="lbl">Bergaransi</div></div>
       </div>
 
@@ -87,64 +87,155 @@
       <p style="color:var(--muted);font-size:15px;margin-top:14px;">Klik layanan untuk melihat detail &amp; cara pemesanan</p>
     </div>
     <div class="svc-grid">
-      <div class="svc-card" data-r data-d="1" onclick="openM('rayap')">
+
+      <!-- PEST CONTROL -->
+      <div class="svc-card" data-r data-d="1" onclick="openM('pestcontrol')">
         <div class="svc-ico">
-          <img src="assets/img/Anti Rayap.png" alt="Anti Rayap" width="50">
+          <img src="assets/img/pest-control.jpg" alt="Pest Control" width="50">
         </div>
-        <h3>Anti Rayap</h3>
-        <p>Perlindungan menyeluruh dengan sistem pengeboran lantai &amp; barrier termitisida tahan lama.</p>
+        <h3>Pest Control</h3>
+        <p>Pengendalian serangga (kecoa, semut, nyamuk, lalat) &amp; tikus dengan metode standar IPM, HACCP, dan baiting system.</p>
         <span class="svc-more"><i class="bi bi-arrow-right-circle-fill"></i> Detail</span>
       </div>
-      <div class="svc-card" data-r data-d="2" onclick="openM('tikus')">
+
+      <!-- TERMITE CONTROL -->
+      <div class="svc-card" data-r data-d="2" onclick="openM('rayap')">
         <div class="svc-ico">
-          <img src="assets/img/Pengendalian TIkus.png" alt="Pengendalian Tikus" width="50">
+          <img src="assets/img/termite-control.jpg" alt="Termite Control" width="50">
         </div>
-        <h3>Pengendalian Tikus</h3>
-        <p>Monitoring &amp; baiting system dengan Rodent Box yang aman dan terkontrol.</p>
+        <h3>Termite Control</h3>
+        <p>Anti rayap pra &amp; pasca konstruksi dengan metode SNI — pengeboran, injeksi termitisida, dan baiting system. Garansi 3–5 tahun.</p>
         <span class="svc-more"><i class="bi bi-arrow-right-circle-fill"></i> Detail</span>
       </div>
-      <div class="svc-card" data-r data-d="3" onclick="openM('kecoa')">
+
+      <!-- FUMIGASI -->
+      <div class="svc-card" data-r data-d="3" onclick="openM('fumigasi')">
         <div class="svc-ico">
-          <img src="assets/img/Kecoak.png" alt="Basmi Kecoa" width="50">
+          <img src="assets/img/fumigasi.jpg " alt="Fumigasi" width="50">
         </div>
-        <h3>Basmi Kecoa</h3>
-        <p>Metode pengkabutan ULV &amp; gel bait efektif untuk ruangan tertutup.</p>
+        <h3>Fumigasi</h3>
+        <p>Fumigasi gudang arsip, komoditi, serta sarana transportasi darat, laut &amp; udara. Efektif membunuh semua stadia hama termasuk kutu.</p>
         <span class="svc-more"><i class="bi bi-arrow-right-circle-fill"></i> Detail</span>
       </div>
-      <div class="svc-card" data-r data-d="4" onclick="openM('nyamuk')">
+
+      <!-- DISINFEKTAN -->
+      <div class="svc-card" data-r data-d="4" onclick="openM('disinfektan')">
         <div class="svc-ico">
-          <img src="assets/img/Fogging Nyamuk.png" alt="" width="50">
+          <img src="assets/img/disinfektan.jpg" alt="Disinfektan" width="50">
         </div>
-        <h3>Fogging Nyamuk</h3>
-        <p>Pengasapan terarah mencegah DBD &amp; nyamuk di area luar dan dalam.</p>
+        <h3>Disinfektan</h3>
+        <p>Sanitasi menyeluruh dengan Cold Fogger (ULV) &amp; wall spraying. Membunuh virus, bakteri, jamur, dan protozoa di seluruh area bangunan.</p>
         <span class="svc-more"><i class="bi bi-arrow-right-circle-fill"></i> Detail</span>
       </div>
-      <div class="svc-card" data-r data-d="5" onclick="openM('lalat')">
-        <div class="svc-ico">
-          <img src="assets/img/Pengendalian lalat.png" alt="Pengendalian Lalat" width="50">
-        </div>
-        <h3>Pengendalian Lalat</h3>
-        <p>Solusi spray residual &amp; sanitasi untuk restoran, gudang, dan area usaha.</p>
-        <span class="svc-more"><i class="bi bi-arrow-right-circle-fill"></i> Detail</span>
-      </div>
+
     </div>
   </div>
 </section>
 
-<!-- MODAL RAYAP -->
-<div class="moverlay" id="modal-rayap" onclick="bgClose(event,'rayap')"><div class="mbox"><div class="mhd"><img src="assets/img/Anti Rayap.png" alt="" width="50"><div><h2>Anti Rayap</h2><p>Pengeboran Lantai – Soil Treatment</p></div><button class="mx" onclick="closeM('rayap')"><i class="bi bi-x-lg"></i></button></div><div class="mbd"><p>Injeksi termitisida ke dalam tanah membentuk barrier perlindungan menyeluruh pada struktur bangunan. Aman dan tahan lama hingga bertahun-tahun.</p><ul class="mlist"><li><i class="bi bi-check-circle-fill"></i> Inspeksi dan pemetaan titik serangan</li><li><i class="bi bi-check-circle-fill"></i> Pengeboran lantai di titik strategis</li><li><i class="bi bi-check-circle-fill"></i> Injeksi termitisida teregistrasi Kementan</li><li><i class="bi bi-check-circle-fill"></i> Pengecekan berkala &amp; laporan tertulis</li><li><i class="bi bi-check-circle-fill"></i> Garansi hasil pekerjaan</li></ul><div class="mact"><a href="https://wa.me/6281110009994?text=Halo%20G-PEST%2C%20konsultasi%20Anti%20Rayap" class="btn-wa" target="_blank"><i class="bi bi-whatsapp"></i> Pesan via WhatsApp</a><button class="btn-bk" onclick="closeM('rayap')"><i class="bi bi-arrow-left"></i> Kembali</button></div></div></div></div>
+<!-- ===================== MODALS ===================== -->
 
-<!-- MODAL TIKUS -->
-<div class="moverlay" id="modal-tikus" onclick="bgClose(event,'tikus')"><div class="mbox"><div class="mhd"><img src="assets/img/Pengendalian TIkus.png" alt="" width="50"><div><h2>Pengendalian Tikus</h2><p>Rodent Box System</p></div><button class="mx" onclick="closeM('tikus')"><i class="bi bi-x-lg"></i></button></div><div class="mbd"><p>Bait station dipasang strategis di jalur aktif tikus. Sistem aman, terkontrol, cocok untuk area dalam maupun luar bangunan komersial dan industri.</p><ul class="mlist"><li><i class="bi bi-check-circle-fill"></i> Survei dan pemetaan jalur tikus</li><li><i class="bi bi-check-circle-fill"></i> Pemasangan Bait Station strategis</li><li><i class="bi bi-check-circle-fill"></i> Monitoring dan pengecekan rutin</li><li><i class="bi bi-check-circle-fill"></i> Aman untuk hewan peliharaan</li><li><i class="bi bi-check-circle-fill"></i> Laporan monitoring bulanan</li></ul><div class="mact"><a href="https://wa.me/6281110009994?text=Halo%20G-PEST%2C%20konsultasi%20Pengendalian%20Tikus" class="btn-wa" target="_blank"><i class="bi bi-whatsapp"></i> Pesan via WhatsApp</a><button class="btn-bk" onclick="closeM('tikus')"><i class="bi bi-arrow-left"></i> Kembali</button></div></div></div></div>
+<!-- MODAL PEST CONTROL -->
+<div class="moverlay" id="modal-pestcontrol" onclick="bgClose(event,'pestcontrol')">
+  <div class="mbox">
+    <div class="mhd">
+      <img src="assets/img/pest-control.jpg" alt="" width="50">
+      <div><h2>Pest Control</h2><p>Pengendalian Serangga &amp; Tikus</p></div>
+      <button class="mx" onclick="closeM('pestcontrol')"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <div class="mbd">
+      <p>Layanan pengendalian hama standar untuk area komersial dan residensial, mencakup serangga terbang, kecoa, semut, dan tikus dengan metode IPM, HACCP, dan pest control standby (Station).</p>
+      <ul class="mlist">
+        <li><i class="bi bi-check-circle-fill"></i> <strong>Nyamuk &amp; Lalat:</strong> Spraying, ULV cold fogger, thermal fogging, larvasida, trapping UV</li>
+        <li><i class="bi bi-check-circle-fill"></i> <strong>Kecoa:</strong> Gel baiting, vacuum flazing, heating system, residual spray</li>
+        <li><i class="bi bi-check-circle-fill"></i> <strong>Semut:</strong> Residual treatment, gel bait, injeksi sarang, proofing akses</li>
+        <li><i class="bi bi-check-circle-fill"></i> <strong>Tikus:</strong> Bait station antikoagulan, rat glue, perangkap, monitoring 15 hari</li>
+        <li><i class="bi bi-check-circle-fill"></i> Laporan monitoring &amp; rekomendasi sanitasi berkala</li>
+        <li><i class="bi bi-check-circle-fill"></i> Memenuhi standar IPM, HACCP &amp; ISO 22000</li>
+      </ul>
+      <div class="mact">
+        <a href="https://wa.me/6281110009994?text=Halo%20G-PEST%2C%20konsultasi%20Pest%20Control" class="btn-wa" target="_blank"><i class="bi bi-whatsapp"></i> Pesan via WhatsApp</a>
+        <button class="btn-bk" onclick="closeM('pestcontrol')"><i class="bi bi-arrow-left"></i> Kembali</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-<!-- MODAL KECOA -->
-<div class="moverlay" id="modal-kecoa" onclick="bgClose(event,'kecoa')"><div class="mbox"><div class="mhd"><img src="assets/img/Kecoak.png" alt="" width="50"><div><h2>Basmi Kecoa</h2><p>Pengkabutan ULV &amp; Gel Bait</p></div><button class="mx" onclick="closeM('kecoa')"><i class="bi bi-x-lg"></i></button></div><div class="mbd"><p>Kombinasi ULV misting dan gel bait membasmi kecoa hingga ke telur. Efektif untuk kecoa Jerman maupun Amerika di dapur, gudang, dan rumah.</p><ul class="mlist"><li><i class="bi bi-check-circle-fill"></i> Identifikasi titik sarang kecoa</li><li><i class="bi bi-check-circle-fill"></i> Pengkabutan (ULV) ruang tertutup</li><li><i class="bi bi-check-circle-fill"></i> Gel bait di area strategis</li><li><i class="bi bi-check-circle-fill"></i> Aman untuk area dapur &amp; makanan</li><li><i class="bi bi-check-circle-fill"></i> Efektif hingga telur kecoa</li></ul><div class="mact"><a href="https://wa.me/6281110009994?text=Halo%20G-PEST%2C%20konsultasi%20Basmi%20Kecoa" class="btn-wa" target="_blank"><i class="bi bi-whatsapp"></i> Pesan via WhatsApp</a><button class="btn-bk" onclick="closeM('kecoa')"><i class="bi bi-arrow-left"></i> Kembali</button></div></div></div></div>
+<!-- MODAL TERMITE CONTROL -->
+<div class="moverlay" id="modal-rayap" onclick="bgClose(event,'rayap')">
+  <div class="mbox">
+    <div class="mhd">
+      <img src="assets/img/termite-control.jpg" alt="" width="50">
+      <div><h2>Termite Control</h2><p>Pengendalian Rayap Pra &amp; Pasca Konstruksi</p></div>
+      <button class="mx" onclick="closeM('rayap')"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <div class="mbd">
+      <p>Pengalaman puluhan tahun dalam penanganan rayap tanah dan rayap kayu kering. Kantor pusat milik sendiri di Tangerang — garansi kualitas tidak diragukan. Tersedia 3 metode sesuai kondisi bangunan.</p>
+      <ul class="mlist">
+        <li><i class="bi bi-check-circle-fill"></i> <strong>Pra-Konstruksi (Garansi 5 tahun):</strong> Spray galian pondasi, lantai kerja, &amp; komponen selulosa sebelum finishing</li>
+        <li><i class="bi bi-check-circle-fill"></i> <strong>Pasca-Konstruksi (Garansi 3 tahun):</strong> Pengeboran sisi luar &amp; dalam pondasi, injeksi termitisida, penutupan lubang</li>
+        <li><i class="bi bi-check-circle-fill"></i> <strong>Metode Baiting:</strong> Pemasangan outdoor &amp; indoor bait, spray termitisida pada komponen selulosa</li>
+        <li><i class="bi bi-check-circle-fill"></i> Termitisida teregistrasi Kementan RI (Sintetik Piretroid)</li>
+        <li><i class="bi bi-check-circle-fill"></i> Laporan tertulis &amp; kunjungan tindak lanjut gratis</li>
+      </ul>
+      <div class="mact">
+        <a href="https://wa.me/6281110009994?text=Halo%20G-PEST%2C%20konsultasi%20Termite%20Control" class="btn-wa" target="_blank"><i class="bi bi-whatsapp"></i> Pesan via WhatsApp</a>
+        <button class="btn-bk" onclick="closeM('rayap')"><i class="bi bi-arrow-left"></i> Kembali</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-<!-- MODAL NYAMUK -->
-<div class="moverlay" id="modal-nyamuk" onclick="bgClose(event,'nyamuk')"><div class="mbox"><div class="mhd"><img src="assets/img/Fogging Nyamuk.png" alt="" width="50"><div><h2>Fogging Nyamuk</h2><p>Pengasapan ULV / Thermal Fog</p></div><button class="mx" onclick="closeM('nyamuk')"><i class="bi bi-x-lg"></i></button></div><div class="mbd"><p>Fogging mesin ULV dengan insektisida teregistrasi. Efektif membasmi nyamuk Aedes (DBD), Culex, dan Anopheles di area luar dan dalam ruangan.</p><ul class="mlist"><li><i class="bi bi-check-circle-fill"></i> Fogging area luar &amp; dalam ruangan</li><li><i class="bi bi-check-circle-fill"></i> Insektisida teregistrasi Kementan RI</li><li><i class="bi bi-check-circle-fill"></i> Jadwal rutin mingguan / bulanan</li><li><i class="bi bi-check-circle-fill"></i> Efektif mencegah wabah DBD</li><li><i class="bi bi-check-circle-fill"></i> Aman setelah 1–2 jam</li></ul><div class="mact"><a href="https://wa.me/6281110009994?text=Halo%20G-PEST%2C%20konsultasi%20Fogging%20Nyamuk" class="btn-wa" target="_blank"><i class="bi bi-whatsapp"></i> Pesan via WhatsApp</a><button class="btn-bk" onclick="closeM('nyamuk')"><i class="bi bi-arrow-left"></i> Kembali</button></div></div></div></div>
+<!-- MODAL FUMIGASI -->
+<div class="moverlay" id="modal-fumigasi" onclick="bgClose(event,'fumigasi')">
+  <div class="mbox">
+    <div class="mhd">
+      <img src="assets/img/fumigasi.jpg" alt="" width="50">
+      <div><h2>Fumigasi</h2><p>Gudang Arsip, Komoditi &amp; Transportasi</p></div>
+      <button class="mx" onclick="closeM('fumigasi')"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <div class="mbd">
+      <p>Jasa fumigasi profesional untuk gudang arsip, komoditi, dan sarana transportasi (darat, laut, udara). Membunuh semua stadia hama — larva, pupa, dan dewasa — secara cepat dan efektif. Dilakukan oleh SDM terlatih bersertifikat dengan alat safety lengkap.</p>
+      <ul class="mlist">
+        <li><i class="bi bi-check-circle-fill"></i> <strong>Space Fumigation:</strong> Fumigasi seluruh ruangan tertutup</li>
+        <li><i class="bi bi-check-circle-fill"></i> <strong>Undersheet Fumigation:</strong> Fumigasi di bawah lembaran plastik untuk komoditi</li>
+        <li><i class="bi bi-check-circle-fill"></i> Fumigan: CH₃Br, PH₃, Sulfuryl Fluoride</li>
+        <li><i class="bi bi-check-circle-fill"></i> Sasaran utama: kutu, serangga gudang, dan semua jenis hama komoditi</li>
+        <li><i class="bi bi-check-circle-fill"></i> Dilengkapi alat monitoring gas &amp; alat safety standar</li>
+        <li><i class="bi bi-check-circle-fill"></i> Sertifikat fumigasi tersedia untuk keperluan ekspor/impor</li>
+      </ul>
+      <div class="mact">
+        <a href="https://wa.me/6281110009994?text=Halo%20G-PEST%2C%20konsultasi%20Fumigasi" class="btn-wa" target="_blank"><i class="bi bi-whatsapp"></i> Pesan via WhatsApp</a>
+        <button class="btn-bk" onclick="closeM('fumigasi')"><i class="bi bi-arrow-left"></i> Kembali</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-<!-- MODAL LALAT -->
-<div class="moverlay" id="modal-lalat" onclick="bgClose(event,'lalat')"><div class="mbox"><div class="mhd"><img src="assets/img/Pengendalian lalat.png" alt="" width="50"><div><h2>Pengendalian Lalat</h2><p>Spray Residual &amp; Sanitasi</p></div><button class="mx" onclick="closeM('lalat')"><i class="bi bi-x-lg"></i></button></div><div class="mbd"><p>Spray residual dan sanitasi menyeluruh. Ideal untuk restoran, pabrik makanan, gudang logistik, dan area komersial standar higienitas tinggi.</p><ul class="mlist"><li><i class="bi bi-check-circle-fill"></i> Inspeksi sumber &amp; jalur lalat</li><li><i class="bi bi-check-circle-fill"></i> Spray residual di titik aktif</li><li><i class="bi bi-check-circle-fill"></i> Pemasangan insect light trap (opsional)</li><li><i class="bi bi-check-circle-fill"></i> Rekomendasi sanitasi lingkungan</li><li><i class="bi bi-check-circle-fill"></i> Cocok standar HACCP &amp; ISO 22000</li></ul><div class="mact"><a href="https://wa.me/6281110009994?text=Halo%20G-PEST%2C%20konsultasi%20Pengendalian%20Lalat" class="btn-wa" target="_blank"><i class="bi bi-whatsapp"></i> Pesan via WhatsApp</a><button class="btn-bk" onclick="closeM('lalat')"><i class="bi bi-arrow-left"></i> Kembali</button></div></div></div></div>
+<!-- MODAL DISINFEKTAN -->
+<div class="moverlay" id="modal-disinfektan" onclick="bgClose(event,'disinfektan')">
+  <div class="mbox">
+    <div class="mhd">
+      <img src="assets/img/disinfektan.jpg" alt="" width="50">
+      <div><h2>Disinfektan</h2><p>Sanitasi &amp; Sterilisasi Menyeluruh</p></div>
+      <button class="mx" onclick="closeM('disinfektan')"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <div class="mbd">
+      <p>Layanan desinfeksi profesional untuk membunuh mikroorganisme patogen — virus, bakteri, jamur, protozoa, dan alga — di seluruh area dalam dan luar bangunan. Direkomendasikan secara rutin setiap 2 minggu sekali.</p>
+      <ul class="mlist">
+        <li><i class="bi bi-check-circle-fill"></i> <strong>Cold Fogger (ULV):</strong> Pengkabutan merata ke seluruh ruangan dan area taman</li>
+        <li><i class="bi bi-check-circle-fill"></i> <strong>Wall Spraying:</strong> Treatment dinding &amp; permukaan yang tidak terjangkau fogger</li>
+        <li><i class="bi bi-check-circle-fill"></i> Efektif terhadap virus flu burung, anthrax, TBC, dan virus lainnya</li>
+        <li><i class="bi bi-check-circle-fill"></i> Larutan disinfektan aman untuk dalam dan luar ruangan</li>
+        <li><i class="bi bi-check-circle-fill"></i> Jadwal dikonfirmasi 1 hari sebelumnya sesuai kesepakatan</li>
+        <li><i class="bi bi-check-circle-fill"></i> Cocok untuk rumah, kantor, sekolah, hotel, &amp; fasilitas kesehatan</li>
+      </ul>
+      <div class="mact">
+        <a href="https://wa.me/6281110009994?text=Halo%20G-PEST%2C%20konsultasi%20Disinfektan" class="btn-wa" target="_blank"><i class="bi bi-whatsapp"></i> Pesan via WhatsApp</a>
+        <button class="btn-bk" onclick="closeM('disinfektan')"><i class="bi bi-arrow-left"></i> Kembali</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- BOOKING -->
 <section id="booking" style="padding:0;">
@@ -170,15 +261,30 @@
         <div class="f-g"><label>Nama Lengkap</label><input type="text" id="bk-nama" placeholder="Nama Anda"></div>
         <div class="f-g"><label>Nomor WhatsApp</label><input type="tel" id="bk-wa" placeholder="08xxxxxxxxxx"></div>
       </div>
-      <div class="f-full"><div class="f-g"><label>Pilih Jenis Hama</label>
+      <div class="f-full"><div class="f-g"><label>Pilih Jenis Layanan</label>
         <select id="bk-hama">
           <option value="">— Pilih Layanan —</option>
-          <option>🐜 Anti Rayap (Pengeboran Lantai)</option>
-          <option>🐀 Pengendalian Tikus (Rodent Box)</option>
-          <option>🪳 Basmi Kecoa (Pengkabutan)</option>
-          <option>🦟 Fogging Nyamuk</option>
-          <option>🪰 Pengendalian Lalat</option>
-          <option>Lainnya</option>
+          <optgroup label="🐜 Pest Control">
+            <option>🪳 Pengendalian Kecoa (Gel Bait / ULV)</option>
+            <option>🦟 Fogging Nyamuk (ULV / Thermal Fog)</option>
+            <option>🪰 Pengendalian Lalat (Spray Residual)</option>
+            <option>🐀 Pengendalian Tikus (Rodent Box)</option>
+            <option>🐜 Pengendalian Semut (Baiting / Spray)</option>
+          </optgroup>
+          <optgroup label="🪵 Termite Control">
+            <option>🏗️ Anti Rayap Pra-Konstruksi (Garansi 5 Tahun)</option>
+            <option>🏠 Anti Rayap Pasca-Konstruksi (Garansi 3 Tahun)</option>
+            <option>🪤 Anti Rayap Metode Baiting</option>
+          </optgroup>
+          <optgroup label="💨 Fumigasi">
+            <option>📦 Fumigasi Gudang / Komoditi</option>
+            <option>🚢 Fumigasi Sarana Transportasi</option>
+          </optgroup>
+          <optgroup label="🧴 Disinfektan">
+            <option>🏢 Disinfektan Gedung / Kantor</option>
+            <option>🏠 Disinfektan Rumah / Hunian</option>
+          </optgroup>
+          <option value="Lainnya">Lainnya</option>
         </select>
       </div></div>
       <div class="f-full"><div class="f-g"><label>Alamat Lokasi</label><input type="text" id="bk-alamat" placeholder="Alamat lengkap lokasi yang ditangani"></div></div>
@@ -199,22 +305,22 @@
       <div class="why-card" data-r data-d="1">
         <div class="why-ico" style="background:linear-gradient(135deg,var(--navy),var(--blue))"><i class="bi bi-shield-fill-check"></i></div>
         <h4>Bersertifikat</h4>
-        <p>Seluruh teknisi memiliki sertifikasi pest control dan pengalaman lapangan teruji.</p>
+        <p>Terdaftar resmi di ASPPHAMI, legalitas lengkap sejak 2009. Seluruh teknisi memiliki sertifikasi pest control dan pengalaman lapangan teruji.</p>
       </div>
       <div class="why-card" data-r data-d="2">
         <div class="why-ico" style="background:linear-gradient(135deg,var(--red2),var(--red))"><i class="bi bi-clock-fill"></i></div>
         <h4>Respon Cepat</h4>
-        <p>Siap bergerak 7 hari seminggu, melayani seluruh wilayah Jabodetabek.</p>
+        <p>Siap bergerak 7 hari seminggu, melayani seluruh wilayah Jabodetabek, Cikarang, dan Cirebon.</p>
       </div>
       <div class="why-card" data-r data-d="3">
         <div class="why-ico" style="background:linear-gradient(135deg,#1b5e20,#388e3c)"><i class="bi bi-flower1"></i></div>
         <h4>Ramah Lingkungan</h4>
-        <p>Bahan teregistrasi, aman bagi manusia, hewan peliharaan, dan alam sekitar.</p>
+        <p>Bahan teregistrasi Kementan RI, aman bagi manusia, hewan peliharaan, dan alam sekitar. Standar internasional IPM &amp; HACCP.</p>
       </div>
       <div class="why-card" data-r data-d="4">
         <div class="why-ico" style="background:linear-gradient(135deg,#e65100,#f57c00)"><i class="bi bi-patch-check-fill"></i></div>
         <h4>Bergaransi</h4>
-        <p>Setiap layanan disertai garansi dan kunjungan tindak lanjut gratis.</p>
+        <p>Garansi hingga 5 tahun untuk anti rayap pra-konstruksi. Setiap layanan disertai kunjungan tindak lanjut gratis.</p>
       </div>
     </div>
   </div>
@@ -260,11 +366,10 @@
         <div class="ft-col">
           <h4>Layanan</h4>
           <ul class="ft-links">
-            <li><a href="#" onclick="openM('rayap');return false;"><i class="bi bi-chevron-right"></i> Anti Rayap</a></li>
-            <li><a href="#" onclick="openM('tikus');return false;"><i class="bi bi-chevron-right"></i> Pengendalian Tikus</a></li>
-            <li><a href="#" onclick="openM('kecoa');return false;"><i class="bi bi-chevron-right"></i> Basmi Kecoa</a></li>
-            <li><a href="#" onclick="openM('nyamuk');return false;"><i class="bi bi-chevron-right"></i> Fogging Nyamuk</a></li>
-            <li><a href="#" onclick="openM('lalat');return false;"><i class="bi bi-chevron-right"></i> Pengendalian Lalat</a></li>
+            <li><a href="#" onclick="openM('pestcontrol');return false;"><i class="bi bi-chevron-right"></i> Pest Control</a></li>
+            <li><a href="#" onclick="openM('rayap');return false;"><i class="bi bi-chevron-right"></i> Termite Control</a></li>
+            <li><a href="#" onclick="openM('fumigasi');return false;"><i class="bi bi-chevron-right"></i> Fumigasi</a></li>
+            <li><a href="#" onclick="openM('disinfektan');return false;"><i class="bi bi-chevron-right"></i> Disinfektan</a></li>
           </ul>
         </div>
         <div class="ft-col">
