@@ -290,6 +290,7 @@
       font-size:42px; font-weight:900; color:#fff;
       text-transform:uppercase; line-height:1.05; margin-bottom:12px;
     }
+    
     .bk-body h2 span { color:var(--red); }
     .bk-body p { color:rgba(255,255,255,.62); font-size:14px; line-height:1.75; margin-bottom:24px; }
     .bk-perks { list-style:none; display:flex; flex-direction:column; gap:11px; }
@@ -461,30 +462,71 @@
       .why-grid{grid-template-columns:1fr 1fr;}
       .ft-bar-in{flex-direction:column;align-items:flex-start;}
     }
-.hero-content{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:40px;
-}
+    
+    .hero-content{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:40px;
+    }
 
-.hero-text{
-  flex:1;
-}
+    .hero-text{
+      flex:1;
+    }
 
-.hero-image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end; /* supaya gambar rata bawah */
-  overflow: hidden;
-  max-height: calc(100vh - 66px); /* tinggi hero dikurangi navbar */
-}
+    .hero-image {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end; /* supaya gambar rata bawah */
+      overflow: hidden;
+      max-height: calc(100vh - 66px); /* tinggi hero dikurangi navbar */
+    }
 
-.hero-image img {
-  width: 100%;        /* ikuti lebar flex container */
-  max-width: 580px;   /* batas maksimal agar tidak terlalu besar */
-  height: auto;
-  object-fit: contain;
-  display: block;
+    .hero-image img {
+      width: 100%;        /* ikuti lebar flex container */
+      max-width: 580px;   /* batas maksimal agar tidak terlalu besar */
+      height: auto;
+      object-fit: contain;
+      display: block;
+    }
+    @media (max-width: 768px) {
+  .bk-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .bk-left {
+    padding: 40px 24px;
+    min-height: 200px;
+  }
+
+  .bk-right {
+    padding: 40px 24px;        /* padding seimbang kiri & kanan */
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .bk-right h3,
+  .bk-sub {
+    text-align: left;          /* atau center kalau mau ditengah */
+  }
+
+  .f-row {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .f-full,
+  .f-g,
+  .f-g input,
+  .f-g select,
+  .f-g textarea {
+    width: 100%;
+    box-sizing: border-box;    /* pastikan tidak overflow */
+  }
+
+  .btn-wa-send {
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
