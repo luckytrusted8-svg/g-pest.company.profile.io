@@ -8,6 +8,26 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
   <link rel="icon" type="image/png" href="assets/img/logo.png">
   <link rel="stylesheet" href="main.css">
+  <style>
+    /* Gambar thumbnail bulat di kartu layanan */
+    .svc-ico {
+      overflow: hidden;
+    }
+    .svc-ico img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    /* Gambar thumbnail di header modal */
+    .mhd img {
+      width: 56px;
+      height: 56px;
+      object-fit: cover;
+      border-radius: 12px;
+      flex-shrink: 0;
+    }
+  </style>
 </head>
 <body>
 
@@ -66,7 +86,7 @@
 
     <!-- KANAN: FOTO -->
     <div class="hero-image">
-      <img src="assets/img/hero-teknisi.png" alt="Teknisi GPEST">
+      <img src="assets/img/hero-teknisi.png" alt="Teknisi GPEST Indonesia berseragam siap bertugas">
     </div>
 
   </div>
@@ -91,7 +111,12 @@
       <!-- PEST CONTROL -->
       <div class="svc-card" data-r data-d="1" onclick="openM('pestcontrol')">
         <div class="svc-ico">
-          <img src="assets/img/pest-control.png" alt="Pest Control" width="50">
+          <!-- Foto asli: Teknisi GPEST sedang spray residual pengendalian serangga -->
+          <img
+            src="https://gpest.id/wp-content/uploads/2023/06/IMG_20160909_152915.jpg"
+            alt="Teknisi GPEST sedang melakukan spray residual pengendalian serangga kecoa semut"
+            title="Pest Control – Teknisi spray residual serangga"
+            width="50">
         </div>
         <h3>Pest Control</h3>
         <p>Pengendalian serangga (kecoa, semut, nyamuk, lalat) &amp; tikus dengan metode standar IPM, HACCP, dan baiting system.</p>
@@ -101,7 +126,12 @@
       <!-- TERMITE CONTROL -->
       <div class="svc-card" data-r data-d="2" onclick="openM('rayap')">
         <div class="svc-ico">
-          <img src="assets/img/termite-control.jpg" alt="Termite Control" width="50">
+          <!-- Foto asli: Teknisi GPEST sedang bor dan injeksi termitisida anti rayap pasca konstruksi -->
+          <img
+            src="https://gpest.id/wp-content/uploads/2023/06/DSCN1234.jpg"
+            alt="Teknisi Anti Rayap GPEST sedang pengeboran pondasi dan injeksi termitisida"
+            title="Termite Control – Pengeboran dan injeksi termitisida rayap"
+            width="50">
         </div>
         <h3>Termite Control</h3>
         <p>Anti rayap pra &amp; pasca konstruksi dengan metode SNI — pengeboran, injeksi termitisida, dan baiting system. Garansi 3–5 tahun.</p>
@@ -111,7 +141,12 @@
       <!-- FUMIGASI -->
       <div class="svc-card" data-r data-d="3" onclick="openM('fumigasi')">
         <div class="svc-ico">
-          <img src="assets/img/fumigasi.jpg " alt="Fumigasi" width="50">
+          <!-- Foto asli: Proses fumigasi gudang komoditi GPEST -->
+          <img
+            src="https://gpest.id/wp-content/uploads/2020/06/DSCN1011.jpg"
+            alt="Proses fumigasi gudang komoditi dengan gas phosphine oleh teknisi GPEST bersertifikat"
+            title="Fumigasi gudang dan sarana transportasi – GPEST Indonesia"
+            width="50">
         </div>
         <h3>Fumigasi</h3>
         <p>Fumigasi gudang arsip, komoditi, serta sarana transportasi darat, laut &amp; udara. Efektif membunuh semua stadia hama termasuk kutu.</p>
@@ -121,7 +156,12 @@
       <!-- DISINFEKTAN -->
       <div class="svc-card" data-r data-d="4" onclick="openM('disinfektan')">
         <div class="svc-ico">
-          <img src="assets/img/disinfektan.jpg" alt="Disinfektan" width="50">
+          <!-- Foto asli: Teknisi GPEST menggunakan ULV cold fogger disinfektan -->
+          <img
+            src="https://gpest.id/wp-content/uploads/2023/06/WhatsApp-Image-2020-06-07-at-18.38.25.jpeg"
+            alt="Teknisi GPEST mengoperasikan mesin ULV cold fogger untuk disinfeksi ruangan gedung"
+            title="Disinfektan ULV cold fogger – Sanitasi menyeluruh GPEST"
+            width="50">
         </div>
         <h3>Disinfektan</h3>
         <p>Sanitasi menyeluruh dengan Cold Fogger (ULV) &amp; wall spraying. Membunuh virus, bakteri, jamur, dan protozoa di seluruh area bangunan.</p>
@@ -138,7 +178,12 @@
 <div class="moverlay" id="modal-pestcontrol" onclick="bgClose(event,'pestcontrol')">
   <div class="mbox">
     <div class="mhd">
-      <img src="assets/img/pest-control.png" alt="" width="50">
+      <!-- Foto asli: Teknisi spray residual / fogging nyamuk & kecoa dari gpest.id -->
+      <img
+        src="https://gpest.id/wp-content/uploads/2023/06/IMG_20160909_152915.jpg"
+        alt="Teknisi Pest Control GPEST sedang melakukan spray residual pengendalian kecoa semut nyamuk"
+        title="Spray residual pengendalian serangga – GPEST"
+        width="50">
       <div><h2>Pest Control</h2><p>Pengendalian Serangga &amp; Tikus</p></div>
       <button class="mx" onclick="closeM('pestcontrol')"><i class="bi bi-x-lg"></i></button>
     </div>
@@ -164,7 +209,12 @@
 <div class="moverlay" id="modal-rayap" onclick="bgClose(event,'rayap')">
   <div class="mbox">
     <div class="mhd">
-      <img src="assets/img/termite-control.jpg" alt="" width="50">
+      <!-- Foto asli: Teknisi bor pondasi & injeksi termitisida dari gpest.id -->
+      <img
+        src="https://gpest.id/wp-content/uploads/2023/06/DSCN1235.jpg"
+        alt="Teknisi Anti Rayap GPEST sedang pengeboran pondasi dan injeksi termitisida pasca konstruksi"
+        title="Pengeboran dan injeksi termitisida rayap tanah – GPEST"
+        width="50">
       <div><h2>Termite Control</h2><p>Pengendalian Rayap Pra &amp; Pasca Konstruksi</p></div>
       <button class="mx" onclick="closeM('rayap')"><i class="bi bi-x-lg"></i></button>
     </div>
@@ -189,7 +239,12 @@
 <div class="moverlay" id="modal-fumigasi" onclick="bgClose(event,'fumigasi')">
   <div class="mbox">
     <div class="mhd">
-      <img src="assets/img/fumigasi.jpg" alt="" width="50">
+      <!-- Foto asli: Proses fumigasi gudang komoditi dari gpest.id -->
+      <img
+        src="https://gpest.id/wp-content/uploads/2020/06/DSCN1061.jpg"
+        alt="Proses fumigasi gudang komoditi dengan gas PH3 oleh teknisi bersertifikat GPEST"
+        title="Fumigasi gudang komoditi dan sarana transportasi – GPEST"
+        width="50">
       <div><h2>Fumigasi</h2><p>Gudang Arsip, Komoditi &amp; Transportasi</p></div>
       <button class="mx" onclick="closeM('fumigasi')"><i class="bi bi-x-lg"></i></button>
     </div>
@@ -215,7 +270,12 @@
 <div class="moverlay" id="modal-disinfektan" onclick="bgClose(event,'disinfektan')">
   <div class="mbox">
     <div class="mhd">
-      <img src="assets/img/disinfektan.jpg" alt="" width="50">
+      <!-- Foto asli: Teknisi ULV cold fogger disinfektan dari gpest.id -->
+      <img
+        src="https://gpest.id/wp-content/uploads/2023/06/WhatsApp-Image-2020-06-07-at-18.39.06.jpeg"
+        alt="Teknisi GPEST menyemprotkan larutan disinfektan menggunakan mesin ULV cold fogger di gedung"
+        title="Disinfeksi ULV cold fogger dan wall spraying – GPEST"
+        width="50">
       <div><h2>Disinfektan</h2><p>Sanitasi &amp; Sterilisasi Menyeluruh</p></div>
       <button class="mx" onclick="closeM('disinfektan')"><i class="bi bi-x-lg"></i></button>
     </div>
