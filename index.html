@@ -27,6 +27,110 @@
       border-radius: 12px;
       flex-shrink: 0;
     }
+
+    /* ── BURGER / MOBILE NAV ──────────────────── */
+
+    /* Burger: sembunyi di desktop */
+    .nav-burger {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+      border-radius: 8px;
+      transition: background .2s;
+      margin-left: auto;
+    }
+    .nav-burger:hover { background: rgba(255,255,255,.1); }
+    .nav-burger span {
+      display: block;
+      width: 24px;
+      height: 2.5px;
+      background: #fff;
+      border-radius: 3px;
+      transition: transform .3s, opacity .3s;
+      transform-origin: center;
+    }
+    .nav-burger.open span:nth-child(1) { transform: translateY(7.5px) rotate(45deg); }
+    .nav-burger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+    .nav-burger.open span:nth-child(3) { transform: translateY(-7.5px) rotate(-45deg); }
+
+    @media (max-width: 768px) {
+      /* Navbar hanya logo + burger */
+      .navbar { padding: 0 18px; }
+
+      /* Tampilkan burger */
+      .nav-burger { display: flex; }
+
+      /* Sembunyikan menu horizontal, ganti jadi dropdown */
+      .nav-links {
+        display: flex !important;
+        flex-direction: column;
+        position: fixed;
+        top: 66px;
+        left: 0;
+        right: 0;
+        background: rgba(7, 16, 38, 0.99);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        gap: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .38s cubic-bezier(.4,0,.2,1);
+        z-index: 998;
+        box-shadow: 0 8px 32px rgba(0,0,0,.4);
+      }
+      .nav-links.open {
+        max-height: 380px;
+      }
+
+      /* Setiap item menu */
+      .nav-links li {
+        width: 100%;
+        border-bottom: 1px solid rgba(255,255,255,.07);
+      }
+      .nav-links li:last-child { border-bottom: none; }
+
+      /* Link teks */
+      .nav-links a {
+        display: flex;
+        align-items: center;
+        padding: 15px 24px;
+        font-size: 15px;
+        font-weight: 500;
+        color: rgba(255,255,255,.85) !important;
+        border-radius: 0;
+        letter-spacing: .3px;
+        transition: background .2s, color .2s;
+      }
+      .nav-links a:hover,
+      .nav-links a.active {
+        background: rgba(255,255,255,.06);
+        color: #fff !important;
+      }
+      .nav-links a.active::after { display: none; }
+
+      /* Tombol telepon di dalam menu — tetap terlihat rapi */
+      .nav-links .nav-cta {
+        margin: 12px 20px 4px;
+        border-radius: 50px !important;
+        padding: 12px 20px !important;
+        font-size: 14px !important;
+        justify-content: center;
+        background: var(--red) !important;
+        box-shadow: 0 4px 16px rgba(211,47,47,.35);
+        width: calc(100% - 40px);
+      }
+      .nav-links .nav-cta::after { display: none !important; }
+      .nav-links .nav-cta:hover { background: var(--red2) !important; }
+    }
+
   </style>
 </head>
 <body>
@@ -39,14 +143,17 @@
       <div class="nav-logo-sub">Pest Control Professional</div>
     </div>
   </a>
-  <ul class="nav-links">
-    <li><a href="#hero" class="active">Home</a></li>
-    <li><a href="#layanan">Layanan</a></li>
-    <li><a href="#mengapa">Tentang</a></li>
-    <li><a href="#booking">Booking</a></li>
-    <li><a href="#testimoni">Testimoni</a></li>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#hero" class="active" onclick="closeNav()">Home</a></li>
+    <li><a href="#layanan" onclick="closeNav()">Layanan</a></li>
+    <li><a href="#mengapa" onclick="closeNav()">Tentang</a></li>
+    <li><a href="#booking" onclick="closeNav()">Booking</a></li>
+    <li><a href="#testimoni" onclick="closeNav()">Testimoni</a></li>
     <li><a href="tel:081110009994" class="nav-cta"><i class="bi bi-telephone-fill"></i> 0811 1000 9994</a></li>
   </ul>
+  <button class="nav-burger" id="navBurger" aria-label="Menu" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 
 <!-- HERO -->
@@ -448,7 +555,7 @@
             <div class="ft-ci"><i class="bi bi-geo-alt-fill"></i><span>Palem Ganda Asri 1 Blok EA No.4, Karang Tengah – Ciledug, Tangerang Kota</span></div>
             <div class="ft-ci"><i class="bi bi-telephone-fill"></i><span>021 584 5000</span></div>
             <div class="ft-ci"><i class="bi bi-whatsapp"></i><span>0811 1000 9994</span></div>
-            <div class="ft-ci"><i class="bi bi-envelope-fill"></i><span>gpestsales@gmail.com</span></div>
+            <div class="ft-ci"><i class="bi bi-envelope-fill"></i><span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4a2d3a2f393e392b262f390a2d272b232664292527">[email&#160;protected]</a></span></div>
           </div>
         </div>
       </div>
@@ -475,7 +582,7 @@
           <span class="sep">|</span>
           <span>WA: 0811 1000 9994</span>
           <span class="sep">|</span>
-          <span>Email: gpestsales@gmail.com</span>
+          <span>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="70170015030403111c150330171d11191c5e131f1d">[email&#160;protected]</a></span>
         </div>
         <span>© 2025 GPEST Indonesia. All Rights Reserved.</span>
       </div>
@@ -488,7 +595,24 @@
   <i class="bi bi-whatsapp"></i>
 </a>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  // ── BURGER MENU ──
+  function toggleNav() {
+    const links = document.getElementById('navLinks');
+    const burger = document.getElementById('navBurger');
+    links.classList.toggle('open');
+    burger.classList.toggle('open');
+  }
+  function closeNav() {
+    document.getElementById('navLinks').classList.remove('open');
+    document.getElementById('navBurger').classList.remove('open');
+  }
+  // Tutup menu saat klik di luar navbar
+  document.addEventListener('click', function(e) {
+    const nav = document.getElementById('mainNav');
+    if (!nav.contains(e.target)) closeNav();
+  });
+
   function openM(id){ document.getElementById('modal-'+id).classList.add('open'); document.body.style.overflow='hidden'; }
   function closeM(id){ document.getElementById('modal-'+id).classList.remove('open'); document.body.style.overflow=''; }
   function bgClose(e,id){ if(e.target===e.currentTarget) closeM(id); }
@@ -508,13 +632,4 @@
   const els=document.querySelectorAll('[data-r]');
   const obs=new IntersectionObserver(en=>{en.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');obs.unobserve(e.target);}});},{threshold:.1});
   els.forEach(el=>obs.observe(el));
-
-  window.addEventListener('scroll',()=>{
-    const ss=document.querySelectorAll('section[id]');
-    let cur='';
-    ss.forEach(s=>{if(window.scrollY>=s.offsetTop-80)cur=s.id;});
-    document.querySelectorAll('.nav-links a').forEach(a=>{a.classList.toggle('active',a.getAttribute('href')==='#'+cur);});
-  });
 </script>
-</body>
-</html>
